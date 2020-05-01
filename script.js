@@ -19,7 +19,7 @@ function updateClockHands() {
     // Calculate the degrees of rotation for all clock hands
     var secondPosition = now.getSeconds() * 6
     var minutePosition = now.getMinutes() * 6 + 0.1 * now.getSeconds()
-    var hourPosition = now.getHours() * 30 + 0.5 * now.getMinutes()
+    var hourPosition = now.getHours() * 30 + 0.5 * now.getMinutes() + 1/120 * now.getSeconds()
 
     if (secondPosition == 0) { secondNumberOfTurns++ }
     if (minutePosition == 0) { minuteNumberOfTurns++ }
