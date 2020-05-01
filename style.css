@@ -55,4 +55,5 @@
 #minute,
 #second {
     transform-origin: 300px 300px;  /* Center point for rotation */
+    transition: transform .5s ease-in-out;  /* Transition for animation */
 }
