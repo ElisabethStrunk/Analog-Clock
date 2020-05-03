@@ -12,41 +12,69 @@
     align-items: middle;
 }
 
-.circle {
+.clock {
+    border-radius: 50%;
+    background: #d6d62d;
+    border: 18px solid #dc535b;
+    box-shadow: inset 4px 6px 16px 0 rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.shine {
     fill: none;
-    stroke: #000;
+    border-radius: 50%;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0);
+    box-shadow: inset -1px -2px 1px 0 rgba(255, 255, 255, 0.541);
+    margin: 2px -7px 0 -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 506px;
+    height: 506px;
+}
+
+.circle {
+    fill: #b3b42c;
+    stroke: #dc535b;
     stroke-width: 9;
     stroke-miterlimit: 10;
 }
 
 .mid-circle {
-    fill: #000;
+    fill: #dc535b;
 }
 
 .hour-marks {
     fill: none;
-    stroke: #000;
+    stroke: #dc535b;
     stroke-width: 9;
     stroke-miterlimit: 10;
 }
 
 .hour-arm {
     fill: none;
-    stroke: #000;
+    stroke: #52356d;
     stroke-width: 17;
     stroke-miterlimit: 10;
 }
 
 .minute-arm {
     fill: none;
-    stroke: #000;
+    stroke: #52356d;
     stroke-width: 11;
     stroke-miterlimit: 10;
 }
 
 .second-arm {
     fill: none;
-    stroke: #000;
+    stroke: #dc535b;
     stroke-width: 4;
     stroke-miterlimit: 10;
 }
