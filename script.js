@@ -1,13 +1,11 @@
-/*
-    Code adapted from course material by Morten Rand-Hendriksen found at
-    https://www.linkedin.com/learning/javascript-essential-training-3
-*/
-
 // Select all elements representing the clock hands
 const SECONDHAND = document.querySelector("#second");
 const MINUTEHAND = document.querySelector("#minute");
 const HOURHAND = document.querySelector("#hour");
 
+// Helper variable to count the number of turns the clock hands have performed
+// since loading; needed to avoid weird behavior of the animation when the hand
+// passes the the 0deg position
 var secondNumberOfTurns = 0
 var minuteNumberOfTurns = 0
 var hourNumberOfTurns = 0
